@@ -1,4 +1,4 @@
-import { withNativeFederation, shareAll } from '@angular-architects/native-federation/config';
+import { shareAll, withNativeFederation } from '@angular-architects/native-federation/config';
 
 export default withNativeFederation({
     name: 'mf-home',
@@ -14,6 +14,7 @@ export default withNativeFederation({
             singleton: true,
             strictVersion: true,
             requiredVersion: 'auto',
+            build: 'package',
         }),
     },
 
