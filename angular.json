@@ -94,6 +94,7 @@
                     },
                     "configurations": {
                         "production": {
+                            "baseHref": "/mf-home/",
                             "budgets": [
                                 {
                                     "type": "initial",
