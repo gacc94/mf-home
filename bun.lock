@@ -22,7 +22,7 @@
       "devDependencies": {
         "@angular/build": "^22.1.8",
         "@angular/cli": "^22.1.8",
-        "@angular/compiler-cli": "^22.1.0",
+        "@angular/compiler-cli": "^22.2.2",
         "@softarc/native-federation-orchestrator": "^4.6.0",
         "jsdom": "^28.0.0",
         "prettier": "^3.8.1",
@@ -56,7 +56,7 @@
 
     "@angular/compiler": ["@angular/compiler@22.1.6", "", { "dependencies": { "tslib": "^2.3.0" } }, "sha512-JjOUm/qD338+fGfZvxSNn/vTUiVqNwOiPzacInVUq1eVp7Jev+cnvEwXA2cFJkYZoy3Imz6wHoMvTUZNN8cbKQ=="],
 
-    "@angular/compiler-cli": ["@angular/compiler-cli@22.1.6", "", { "dependencies": { "@babel/core": "8.0.1", "@jridgewell/sourcemap-codec": "^1.4.14", "chokidar": "^5.0.0", "convert-source-map": "^1.5.1", "reflect-metadata": "^0.2.0", "semver": "^7.0.0", "tslib": "^2.3.0", "yargs": "^18.0.0" }, "peerDependencies": { "@angular/compiler": "22.1.6", "typescript": ">=6.0 <6.1" }, "optionalPeers": ["typescript"], "bin": { "ngc": "bundles/src/bin/ngc.js", "ng-xi18n": "bundles/src/bin/ng_xi18n.js" } }, "sha512-C1fQuaSLnibhfbb7Im/vurdBEcfQk+/GqPkY4+dgEKd4EPleO0xWlD+k5DwyNFX8a9w7HebWfo0Zl66HuaEwOQ=="],
+    "@angular/compiler-cli": ["@angular/compiler-cli@22.2.2", "", { "dependencies": { "@babel/core": "8.0.1", "@jridgewell/sourcemap-codec": "^1.4.14", "chokidar": "^5.0.0", "convert-source-map": "^1.5.1", "reflect-metadata": "^0.2.0", "semver": "^7.0.0", "tslib": "^2.3.0", "yargs": "^18.0.0" }, "peerDependencies": { "@angular/compiler": "22.2.2", "typescript": ">=6.0 <6.1" }, "optionalPeers": ["typescript"], "bin": { "ngc": "bundles/src/bin/ngc.js", "ng-xi18n": "bundles/src/bin/ng_xi18n.js" } }, "sha512-7PCIBTVIzG4oyAkDeBRPJpGcgSDLBCKn+2Pp9+gXnXOEETdWhV34so1fpWZ2GWBZsxXav7Ry0K93vFwF93yWoQ=="],
 
     "@angular/core": ["@angular/core@22.1.6", "", { "dependencies": { "tslib": "^2.3.0" }, "peerDependencies": { "@angular/compiler": "22.1.6", "rxjs": "^6.5.3 || ^7.4.0", "zone.js": "~0.15.0 || ~0.16.0" }, "optionalPeers": ["@angular/compiler", "zone.js"] }, "sha512-3Ln9YYOhsaU2vPufnpcu6C4dlmX4e/nJTlggVcKMT7bGZH5KlEtw3h0uh9YfANv8YhQCEk1AcuRI7KpBnh5ing=="],
 
