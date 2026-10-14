@@ -1,15 +1,32 @@
 version: 2
 updates:
-  # Escaneo y actualización semanal de dependencias Bun
-  - package-ecosystem: "bun"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-    open-pull-requests-limit: 10
+    # Escaneo y actualización semanal de dependencias Bun (agrupadas)
+    - package-ecosystem: "bun"
+      directory: "/"
+      schedule:
+          interval: "weekly"
+      open-pull-requests-limit: 10
+      groups:
+          angular-framework:
+              patterns:
+                  - "@angular*"
+                  - "@softarc*"
+          development-tooling:
+              patterns:
+                  - "prettier"
+                  - "eslint*"
+                  - "@eslint*"
+                  - "typescript*"
+                  - "vitest*"
+                  - "jsdom*"
 
-  # Escaneo y actualización semanal de GitHub Actions
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-    open-pull-requests-limit: 10
+    # Escaneo y actualización semanal de GitHub Actions (agrupadas)
+    - package-ecosystem: "github-actions"
+      directory: "/"
+      schedule:
+          interval: "weekly"
+      open-pull-requests-limit: 5
+      groups:
+          github-actions:
+              patterns:
+                  - "*"
