@@ -7,18 +7,42 @@ updates:
           interval: "weekly"
       open-pull-requests-limit: 10
       groups:
-          angular-framework:
+          angular-ecosystem:
               patterns:
                   - "@angular*"
+                  - "angular-eslint*"
+                  - "@angular-architects*"
                   - "@softarc*"
-          development-tooling:
-              patterns:
-                  - "prettier"
-                  - "eslint*"
-                  - "@eslint*"
-                  - "typescript*"
+                  - "rxjs*"
+                  - "tslib*"
+                  - "zone.js*"
+                  - "typescript"
                   - "vitest*"
                   - "jsdom*"
+                  - "es-module-shims*"
+          development-tooling:
+              patterns:
+                  - "prettier*"
+                  - "eslint*"
+                  - "@eslint*"
+                  - "typescript-eslint*"
+      ignore:
+          # Evita saltos de versión mayor que rompen el compilador o peerDependencies de Angular.
+          # Los cambios mayores de Angular deben realizarse exclusivamente vía `ng update`.
+          - dependency-name: "typescript"
+            update-types: ["version-update:semver-major"]
+          - dependency-name: "vitest"
+            update-types: ["version-update:semver-major"]
+          - dependency-name: "rxjs"
+            update-types: ["version-update:semver-major"]
+          - dependency-name: "@angular*"
+            update-types: ["version-update:semver-major"]
+          - dependency-name: "angular-eslint*"
+            update-types: ["version-update:semver-major"]
+          - dependency-name: "@angular-architects*"
+            update-types: ["version-update:semver-major"]
+          - dependency-name: "@softarc*"
+            update-types: ["version-update:semver-major"]
 
     # Escaneo y actualización semanal de GitHub Actions (agrupadas)
     - package-ecosystem: "github-actions"
